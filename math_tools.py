@@ -11,3 +11,10 @@ def is_prime(number):
 
 if __name__ == "__main__":
     print(f"Is 11 prime? {is_prime(11)}")
+
+def next_prime(n):
+    current = n + 1
+    while True:
+        if is_prime(current):
+            return current
+        current += 1
